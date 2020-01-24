@@ -28,6 +28,10 @@ router.get('/', function(req, res, next) {
   connection.end();
 });
 
+router.get('/cek', (req, res, next)=>{
+  res.send('Sukses');
+})
+
 router.get('/form', function(req, res, next) {
   res.render('./form.html')
 })
