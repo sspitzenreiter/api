@@ -24,7 +24,6 @@ router.get('/', function(req, res, next) {
     var datares = result;
     res.send(datares);
   });
-  
   connection.end();
 });
 
