@@ -83,7 +83,7 @@ router.get('/veriv', function(req, res, next) {
   var connection = mysql.createConnection({
     host: '103.108.158.188',
     user: 'root',
-    password:'',
+    password:'admin',
     database: 'apidone'
   });
   connection.connect();
