@@ -91,7 +91,7 @@ router.get('/veriv', function(req, res, next) {
     if(err){
       console.log(err);
     }
-    if(result.length>0){
+    if(result != ""){
       console.log(result);
       connection.query('select id_matkul,nilai from nilai where npm ="'+req.query.npm+'"', function(err2, result2, field){
         if(result2 != ""){
