@@ -88,6 +88,9 @@ router.get('/veriv', function(req, res, next) {
   });
   connection.connect();
   connection.query('select id from data_client where api_key ="'+req.query.api+'"', function(err, result, field){
+    if(err){
+      console.log(err);
+    }
     if(result.length>0){
       console.log(result);
       connection.query('select id_matkul,nilai from nilai where npm ="'+req.query.npm+'"', function(err2, result2, field){
