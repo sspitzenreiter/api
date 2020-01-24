@@ -81,7 +81,7 @@ router.get('/cek', function(req, res, next) {
 
 router.get('/veriv', function(req, res, next) {
   var connection = mysql.createConnection({
-    host: 'localhost',
+    host: '103.108.158.188',
     user: 'root',
     password:'',
     database: 'apidone'
